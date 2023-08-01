@@ -74,6 +74,9 @@ a:hover {
   transform: scale(1.02);
   z-index: 1;
 }
+.height {
+  min-height: 500px;
+}
 
 /* 
 git add .

@@ -1,0 +1,81 @@
+#logonav {
+  width: 150px;
+}
+section {
+  min-height: 100vh;
+  padding: 50px 0px;
+}
+
+.text-blue {
+  color: #03affe !important;
+}
+.bg-blue {
+  background-color: #03affe;
+}
+
+a {
+  transition: 0.3s;
+}
+a:hover {
+  color: #03affe !important;
+}
+
+#carosel-section {
+  min-height: 100vh;
+}
+
+#image-carosel {
+  overflow: hidden !important;
+}
+
+#text-carosel {
+  padding-left: 15%;
+}
+#promo {
+  text-decoration: line-through;
+}
+/* breakpoint */
+/* 992px - LG */
+@media screen and (max-width: 992px) {
+  #text-carosel {
+    padding-left: 0%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #text-carosel > * {
+    text-align: center;
+  }
+  #image-carosel {
+    width: 80% !important;
+  }
+}
+.header-card {
+  position: relative;
+  overflow: hidden;
+}
+.card-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000062;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  display: none;
+  transition: all 0.4s !important;
+}
+.card-hover > span {
+  display: flex;
+  justify-content: center;
+  background-color: #03affe;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card:hover .card-hover {
+  display: flex;
+}

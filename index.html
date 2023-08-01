@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg shadow py-3 sticky-top z-2 bg-white">
+      <div class="container">
+        <a class="navbar-brand w-25 fw-bold fs-3" href="#"><img class="" id="logonav" src="assets/img/20230801_134217.png" alt="" /></a>
+        <button
+          class="navbar-toggler border-0 focus-ring focus-ring-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bx bx-menu-alt-right fs-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 w-50 d-flex justify-content-center align-items-center gap-lg-5">
+            <li class="nav-item">
+              <a class="nav-link active text-blue my-3 my-lg-0" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mb-3 mb-lg-0" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mb-3 mb-lg-0" href="#">Poduct</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link mb-3 mb-lg-0 d-flex justify-content-center align-items-center" href="#" data-bs-toggle="dropdown">
+                <span>Other</span>
+                <i class="bx bx-chevron-down"></i>
+              </a>
+
+              <ul class="dropdown-menu border-0 shadow">
+                <li><span class="dropdown-item-text text-blue fw-bold border-bottom py-2 bg-opacity-25">Contact us</span></li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <i class="bx bx-envelope fs-5"></i>
+                    <span class="pb-1 ms-1">Email</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <i class="bx bxl-whatsapp fs-5"></i>
+                    <span class="pb-1 ms-1">Whatsapp</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <i class="bx bxl-telegram fs-5"></i>
+                    <span class="pb-1 ms-1">Telegram</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav mx-auto ms-lg-auto mb-2 mb-lg-0 w-25 d-flex justify-content-end gap-lg-4 gap-5 d-flex flex-row justify-content-center rounded-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bx bx-user fs-4"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bx bxs-heart fs-4"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bx bx-cart fs-4"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero carosel start -->
+    <section id="carosel-section " class="">
+      <div class="container-fluid p-0 mt-5">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators z-1">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-primary" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="bg-primary"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="bg-primary"></button>
+          </div>
+          <div class="carousel-inner pb-5">
+            <div class="carousel-item active">
+              <div class="container-fluid">
+                <div class="row">
+                  <div id="text-carosel" class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h1 class="display-3">Cloth lorem ipsum</h1>
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p class="fs-4 fw-light mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odit laborum nisi illum in. Atque necessitatibus eius quidem sint temporibus.</p>
+                  </div>
+                  <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <img id="image-carosel" class="w-50" src="assets/img/carosel-1.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container-fluid">
+                <div class="row">
+                  <div id="text-carosel" class="col-md-6 d-flex flex-column justify-content-center">
+                    <h1 class="display-3">Cloth lorem ipsum</h1>
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p class="fs-4 fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odit laborum nisi illum in. Atque necessitatibus eius quidem sint temporibus.</p>
+                  </div>
+                  <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img id="image-carosel" class="w-50" src="assets/img/carosel-1.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container-fluid">
+                <div class="row">
+                  <div id="text-carosel" class="col-md-6 d-flex flex-column justify-content-center">
+                    <h1 class="display-3">Cloth lorem ipsum</h1>
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p class="fs-4 fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odit laborum nisi illum in. Atque necessitatibus eius quidem sint temporibus.</p>
+                  </div>
+                  <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img id="image-carosel" class="w-50" src="assets/img/carosel-1.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev z-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next z-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- hero carosel end -->
+
+    <!-- populer product start -->
+    <section class="bg-secondary bg-opacity-25">
+      <div class="container">
+        <h1 class="text-center mb-5 fw-light">Popular Product</h1>
+        <div class="container-fluid">
+          <div class="row g-4 mb-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="card rounded-3 shadow">
+                <div class="header-card">
+                  <div class="card-hover rounded-top-3">
+                    <span class="fs-1 "><i class="bx bxs-heart text-white"></i></span>
+                    <span class="fs-1"><i class="bx bx-fullscreen text-white"></i></span>
+                    <span class="fs-1 "><i class="bx bx-cart-add text-white"></i></span>
+                  </div>
+                  <img src="assets/img/carosel-1.jpg" class="card-img-top border-bottom rounded-3" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-5">Clothing</h5>
+                  <p class="card-text fw-light">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="fw-bold mb-0 text-danger">Rp. 100.000</p>
+                  <p id="promo" class="fw-bold text-secondary">Rp. 100.000</p>
+                  <div class="w-100 d-flex justify-content-between">
+                    <div>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-secondary"></i>
+                    </div>
+                    <p class="text-dark text-opacity-50">Sold 436</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card rounded-3 shadow">
+                <div class="header-card">
+                  <div class="card-hover rounded-top-3">
+                    <span class="fs-1 "><i class="bx bxs-heart text-white"></i></span>
+                    <span class="fs-1"><i class="bx bx-fullscreen text-white"></i></span>
+                    <span class="fs-1 "><i class="bx bx-cart-add text-white"></i></span>
+                  </div>
+                  <img src="assets/img/carosel-1.jpg" class="card-img-top border-bottom rounded-3" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-5">Clothing</h5>
+                  <p class="card-text fw-light">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="fw-bold mb-0 text-danger">Rp. 100.000</p>
+                  <p id="promo" class="fw-bold text-secondary">Rp. 100.000</p>
+                  <div class="w-100 d-flex justify-content-between">
+                    <div>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-secondary"></i>
+                    </div>
+                    <p class="text-dark text-opacity-50">Sold 436</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card rounded-3 shadow">
+                <div class="header-card">
+                  <div class="card-hover rounded-top-3">
+                    <span class="fs-1 "><i class="bx bxs-heart text-white"></i></span>
+                    <span class="fs-1"><i class="bx bx-fullscreen text-white"></i></span>
+                    <span class="fs-1 "><i class="bx bx-cart-add text-white"></i></span>
+                  </div>
+                  <img src="assets/img/carosel-1.jpg" class="card-img-top border-bottom rounded-3" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-5">Clothing</h5>
+                  <p class="card-text fw-light">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="fw-bold mb-0 text-danger">Rp. 100.000</p>
+                  <p id="promo" class="fw-bold text-secondary">Rp. 100.000</p>
+                  <div class="w-100 d-flex justify-content-between">
+                    <div>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-secondary"></i>
+                    </div>
+                    <p class="text-dark text-opacity-50">Sold 436</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card rounded-3 shadow">
+                <div class="header-card">
+                  <div class="card-hover rounded-top-3">
+                    <span class="fs-1 "><i class="bx bxs-heart text-white"></i></span>
+                    <span class="fs-1"><i class="bx bx-fullscreen text-white"></i></span>
+                    <span class="fs-1 "><i class="bx bx-cart-add text-white"></i></span>
+                  </div>
+                  <img src="assets/img/carosel-1.jpg" class="card-img-top border-bottom rounded-3" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-5">Clothing</h5>
+                  <p class="card-text fw-light">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="fw-bold mb-0 text-danger">Rp. 100.000</p>
+                  <p id="promo" class="fw-bold text-secondary">Rp. 100.000</p>
+                  <div class="w-100 d-flex justify-content-between">
+                    <div>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-secondary"></i>
+                    </div>
+                    <p class="text-dark text-opacity-50">Sold 436</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 mb-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="card rounded-3 shadow">
+                <div class="header-card">
+                  <div class="card-hover rounded-top-3">
+                    <span class="fs-1 "><i class="bx bxs-heart text-white"></i></span>
+                    <span class="fs-1"><i class="bx bx-fullscreen text-white"></i></span>
+                    <span class="fs-1 "><i class="bx bx-cart-add text-white"></i></span>
+                  </div>
+                  <img src="assets/img/carosel-1.jpg" class="card-img-top border-bottom rounded-3" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-5">Clothing</h5>
+                  <p class="card-text fw-light">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="fw-bold mb-0 text-danger">Rp. 100.000</p>
+                  <p id="promo" class="fw-bold text-secondary">Rp. 100.000</p>
+                  <div class="w-100 d-flex justify-content-between">
+                    <div>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-secondary"></i>
+                    </div>
+                    <p class="text-dark text-opacity-50">Sold 436</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card rounded-3 shadow">
+                <div class="header-card">
+                  <div class="card-hover rounded-top-3">
+                    <span class="fs-1 "><i class="bx bxs-heart text-white"></i></span>
+                    <span class="fs-1"><i class="bx bx-fullscreen text-white"></i></span>
+                    <span class="fs-1 "><i class="bx bx-cart-add text-white"></i></span>
+                  </div>
+                  <img src="assets/img/carosel-1.jpg" class="card-img-top border-bottom rounded-3" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-5">Clothing</h5>
+                  <p class="card-text fw-light">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="fw-bold mb-0 text-danger">Rp. 100.000</p>
+                  <p id="promo" class="fw-bold text-secondary">Rp. 100.000</p>
+                  <div class="w-100 d-flex justify-content-between">
+                    <div>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-secondary"></i>
+                    </div>
+                    <p class="text-dark text-opacity-50">Sold 436</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card rounded-3 shadow">
+                <div class="header-card">
+                  <div class="card-hover rounded-top-3">
+                    <span class="fs-1 "><i class="bx bxs-heart text-white"></i></span>
+                    <span class="fs-1"><i class="bx bx-fullscreen text-white"></i></span>
+                    <span class="fs-1 "><i class="bx bx-cart-add text-white"></i></span>
+                  </div>
+                  <img src="assets/img/carosel-1.jpg" class="card-img-top border-bottom rounded-3" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-5">Clothing</h5>
+                  <p class="card-text fw-light">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="fw-bold mb-0 text-danger">Rp. 100.000</p>
+                  <p id="promo" class="fw-bold text-secondary">Rp. 100.000</p>
+                  <div class="w-100 d-flex justify-content-between">
+                    <div>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-secondary"></i>
+                    </div>
+                    <p class="text-dark text-opacity-50">Sold 436</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card rounded-3 shadow">
+                <div class="header-card">
+                  <div class="card-hover rounded-top-3">
+                    <span class="fs-1 "><i class="bx bxs-heart text-white"></i></span>
+                    <span class="fs-1"><i class="bx bx-fullscreen text-white"></i></span>
+                    <span class="fs-1 "><i class="bx bx-cart-add text-white"></i></span>
+                  </div>
+                  <img src="assets/img/carosel-1.jpg" class="card-img-top border-bottom rounded-3" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-5">Clothing</h5>
+                  <p class="card-text fw-light">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="fw-bold mb-0 text-danger">Rp. 100.000</p>
+                  <p id="promo" class="fw-bold text-secondary">Rp. 100.000</p>
+                  <div class="w-100 d-flex justify-content-between">
+                    <div>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-secondary"></i>
+                    </div>
+                    <p class="text-dark text-opacity-50">Sold 436</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- populer product end -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

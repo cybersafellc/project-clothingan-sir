@@ -7,17 +7,17 @@ section {
 }
 
 .text-blue {
-  color: #03affe !important;
+  color: black !important;
 }
 .bg-blue {
-  background-color: #03affe;
+  background-color: black;
 }
 
 a {
   transition: 0.3s;
 }
 a:hover {
-  color: #03affe !important;
+  color: black !important;
 }
 
 #carosel-section {
@@ -71,11 +71,29 @@ a:hover {
 .card-hover > span {
   display: flex;
   justify-content: center;
-  background-color: #03affe;
+  background-color: black;
   padding: 5px;
   border-radius: 5px;
 }
 
 .card:hover .card-hover {
   display: flex;
+}
+
+/* 
+git remote add origin https://github.com/cybersafellc/project-clothingan-sir.git
+git branch -M main
+git push -u origin main */
+
+.promo {
+  position: absolute;
+  top: 0px;
+  background-color: red;
+  color: white;
+  font-weight: normal;
+  padding: 5px;
+  right: 0px;
+}
+#promo > span {
+  text-decoration: none;
 }

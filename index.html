@@ -82,12 +82,12 @@
 
     <!-- hero carosel start -->
     <section id="carosel-section " class="">
-      <div class="container-fluid p-0 mt-5">
+      <div class="container-fluid p-0 mt-md-5">
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators z-1">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-primary" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="bg-primary"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="bg-primary"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="bg-dark"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="bg-dark"></button>
           </div>
           <div class="carousel-inner pb-5">
             <div class="carousel-item active">
@@ -107,12 +107,12 @@
             <div class="carousel-item">
               <div class="container-fluid">
                 <div class="row">
-                  <div id="text-carosel" class="col-md-6 d-flex flex-column justify-content-center">
+                  <div id="text-carosel" class="col-lg-6 d-flex flex-column justify-content-center">
                     <h1 class="display-3">Cloth lorem ipsum</h1>
                     <h1>Lorem ipsum dolor sit amet.</h1>
-                    <p class="fs-4 fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odit laborum nisi illum in. Atque necessitatibus eius quidem sint temporibus.</p>
+                    <p class="fs-4 fw-light mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odit laborum nisi illum in. Atque necessitatibus eius quidem sint temporibus.</p>
                   </div>
-                  <div class="col-md-6 d-flex justify-content-center align-items-center">
+                  <div class="col-lg-6 d-flex justify-content-center align-items-center">
                     <img id="image-carosel" class="w-50" src="assets/img/carosel-1.jpg" alt="" />
                   </div>
                 </div>
@@ -121,12 +121,12 @@
             <div class="carousel-item">
               <div class="container-fluid">
                 <div class="row">
-                  <div id="text-carosel" class="col-md-6 d-flex flex-column justify-content-center">
+                  <div id="text-carosel" class="col-lg-6 d-flex flex-column justify-content-center">
                     <h1 class="display-3">Cloth lorem ipsum</h1>
                     <h1>Lorem ipsum dolor sit amet.</h1>
-                    <p class="fs-4 fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odit laborum nisi illum in. Atque necessitatibus eius quidem sint temporibus.</p>
+                    <p class="fs-4 fw-light mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odit laborum nisi illum in. Atque necessitatibus eius quidem sint temporibus.</p>
                   </div>
-                  <div class="col-md-6 d-flex justify-content-center align-items-center">
+                  <div class="col-lg-6 d-flex justify-content-center align-items-center">
                     <img id="image-carosel" class="w-50" src="assets/img/carosel-1.jpg" alt="" />
                   </div>
                 </div>
@@ -134,11 +134,13 @@
             </div>
           </div>
           <button class="carousel-control-prev z-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+            <div class="bg-dark p-2 d-flex justify-content-center align-items-center"><span class="carousel-control-prev-icon" aria-hidden="true"></span></div>
+
             <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next z-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+            <div class="bg-dark p-2 d-flex justify-content-center align-items-center"><span class="carousel-control-next-icon" aria-hidden="true"></span></div>
+
             <span class="visually-hidden">Next</span>
           </button>
         </div>
@@ -155,10 +157,42 @@
             <div class="col-lg-3 col-md-6">
               <div class="card rounded-3 shadow">
                 <div class="header-card">
+                  <div class="promo">Top product</div>
                   <div class="card-hover rounded-top-3">
-                    <span class="fs-1 "><i class="bx bxs-heart text-white"></i></span>
+                    <span class="fs-1"><i class="bx bxs-heart text-white"></i></span>
                     <span class="fs-1"><i class="bx bx-fullscreen text-white"></i></span>
-                    <span class="fs-1 "><i class="bx bx-cart-add text-white"></i></span>
+                    <span class="fs-1"><i class="bx bx-cart-add text-white"></i></span>
+                  </div>
+                  <img src="assets/img/carosel-1.jpg" class="card-img-top border-bottom rounded-3" alt="..." />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-5">Clothing</h5>
+                  <p class="card-text fw-light">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="fw-bold mb-0 text-danger">Rp. 100.000</p>
+                  <div class="d-flex gap-2">
+                    <p id="promo" class="fw-bold text-secondary">Rp. 100.000</p>
+                    <span class="fw-bold text-dark">-25%</span>
+                  </div>
+                  <div class="w-100 d-flex justify-content-between">
+                    <div>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-secondary"></i>
+                    </div>
+                    <p class="text-dark text-opacity-50">Sold 436</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card rounded-3 shadow">
+                <div class="header-card">
+                  <div class="card-hover rounded-top-3">
+                    <span class="fs-1"><i class="bx bxs-heart text-white"></i></span>
+                    <span class="fs-1"><i class="bx bx-fullscreen text-white"></i></span>
+                    <span class="fs-1"><i class="bx bx-cart-add text-white"></i></span>
                   </div>
                   <img src="assets/img/carosel-1.jpg" class="card-img-top border-bottom rounded-3" alt="..." />
                 </div>
@@ -184,9 +218,9 @@
               <div class="card rounded-3 shadow">
                 <div class="header-card">
                   <div class="card-hover rounded-top-3">
-                    <span class="fs-1 "><i class="bx bxs-heart text-white"></i></span>
+                    <span class="fs-1"><i class="bx bxs-heart text-white"></i></span>
                     <span class="fs-1"><i class="bx bx-fullscreen text-white"></i></span>
-                    <span class="fs-1 "><i class="bx bx-cart-add text-white"></i></span>
+                    <span class="fs-1"><i class="bx bx-cart-add text-white"></i></span>
                   </div>
                   <img src="assets/img/carosel-1.jpg" class="card-img-top border-bottom rounded-3" alt="..." />
                 </div>
@@ -212,37 +246,9 @@
               <div class="card rounded-3 shadow">
                 <div class="header-card">
                   <div class="card-hover rounded-top-3">
-                    <span class="fs-1 "><i class="bx bxs-heart text-white"></i></span>
+                    <span class="fs-1"><i class="bx bxs-heart text-white"></i></span>
                     <span class="fs-1"><i class="bx bx-fullscreen text-white"></i></span>
-                    <span class="fs-1 "><i class="bx bx-cart-add text-white"></i></span>
-                  </div>
-                  <img src="assets/img/carosel-1.jpg" class="card-img-top border-bottom rounded-3" alt="..." />
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title fs-5">Clothing</h5>
-                  <p class="card-text fw-light">Lorem ipsum dolor sit amet consectetur.</p>
-                  <p class="fw-bold mb-0 text-danger">Rp. 100.000</p>
-                  <p id="promo" class="fw-bold text-secondary">Rp. 100.000</p>
-                  <div class="w-100 d-flex justify-content-between">
-                    <div>
-                      <i class="bx bxs-star text-warning"></i>
-                      <i class="bx bxs-star text-warning"></i>
-                      <i class="bx bxs-star text-warning"></i>
-                      <i class="bx bxs-star text-warning"></i>
-                      <i class="bx bxs-star text-secondary"></i>
-                    </div>
-                    <p class="text-dark text-opacity-50">Sold 436</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card rounded-3 shadow">
-                <div class="header-card">
-                  <div class="card-hover rounded-top-3">
-                    <span class="fs-1 "><i class="bx bxs-heart text-white"></i></span>
-                    <span class="fs-1"><i class="bx bx-fullscreen text-white"></i></span>
-                    <span class="fs-1 "><i class="bx bx-cart-add text-white"></i></span>
+                    <span class="fs-1"><i class="bx bx-cart-add text-white"></i></span>
                   </div>
                   <img src="assets/img/carosel-1.jpg" class="card-img-top border-bottom rounded-3" alt="..." />
                 </div>
@@ -269,10 +275,11 @@
             <div class="col-lg-3 col-md-6">
               <div class="card rounded-3 shadow">
                 <div class="header-card">
+                  <div class="promo">Top product</div>
                   <div class="card-hover rounded-top-3">
-                    <span class="fs-1 "><i class="bx bxs-heart text-white"></i></span>
+                    <span class="fs-1"><i class="bx bxs-heart text-white"></i></span>
                     <span class="fs-1"><i class="bx bx-fullscreen text-white"></i></span>
-                    <span class="fs-1 "><i class="bx bx-cart-add text-white"></i></span>
+                    <span class="fs-1"><i class="bx bx-cart-add text-white"></i></span>
                   </div>
                   <img src="assets/img/carosel-1.jpg" class="card-img-top border-bottom rounded-3" alt="..." />
                 </div>
@@ -298,9 +305,9 @@
               <div class="card rounded-3 shadow">
                 <div class="header-card">
                   <div class="card-hover rounded-top-3">
-                    <span class="fs-1 "><i class="bx bxs-heart text-white"></i></span>
+                    <span class="fs-1"><i class="bx bxs-heart text-white"></i></span>
                     <span class="fs-1"><i class="bx bx-fullscreen text-white"></i></span>
-                    <span class="fs-1 "><i class="bx bx-cart-add text-white"></i></span>
+                    <span class="fs-1"><i class="bx bx-cart-add text-white"></i></span>
                   </div>
                   <img src="assets/img/carosel-1.jpg" class="card-img-top border-bottom rounded-3" alt="..." />
                 </div>
@@ -326,9 +333,9 @@
               <div class="card rounded-3 shadow">
                 <div class="header-card">
                   <div class="card-hover rounded-top-3">
-                    <span class="fs-1 "><i class="bx bxs-heart text-white"></i></span>
+                    <span class="fs-1"><i class="bx bxs-heart text-white"></i></span>
                     <span class="fs-1"><i class="bx bx-fullscreen text-white"></i></span>
-                    <span class="fs-1 "><i class="bx bx-cart-add text-white"></i></span>
+                    <span class="fs-1"><i class="bx bx-cart-add text-white"></i></span>
                   </div>
                   <img src="assets/img/carosel-1.jpg" class="card-img-top border-bottom rounded-3" alt="..." />
                 </div>
@@ -354,9 +361,9 @@
               <div class="card rounded-3 shadow">
                 <div class="header-card">
                   <div class="card-hover rounded-top-3">
-                    <span class="fs-1 "><i class="bx bxs-heart text-white"></i></span>
+                    <span class="fs-1"><i class="bx bxs-heart text-white"></i></span>
                     <span class="fs-1"><i class="bx bx-fullscreen text-white"></i></span>
-                    <span class="fs-1 "><i class="bx bx-cart-add text-white"></i></span>
+                    <span class="fs-1"><i class="bx bx-cart-add text-white"></i></span>
                   </div>
                   <img src="assets/img/carosel-1.jpg" class="card-img-top border-bottom rounded-3" alt="..." />
                 </div>
@@ -379,7 +386,6 @@
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </section>

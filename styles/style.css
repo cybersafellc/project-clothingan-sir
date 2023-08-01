@@ -31,7 +31,6 @@ a:hover {
 }
 
 #image-carosel {
-  overflow: hidden !important;
 }
 
 #text-carosel {
@@ -40,26 +39,9 @@ a:hover {
 #promo {
   text-decoration: line-through;
 }
-/* breakpoint */
-/* 992px - LG */
-@media screen and (max-width: 992px) {
-  #text-carosel {
-    padding-left: 0%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #text-carosel > * {
-    text-align: center;
-  }
-  #image-carosel {
-    width: 80% !important;
-  }
-}
+
 .header-card {
   position: relative;
-  overflow: hidden;
 }
 .card-hover {
   position: absolute;
@@ -85,6 +67,13 @@ a:hover {
 .card:hover .card-hover {
   display: flex;
 }
+.card {
+  transition: all 0.3s;
+}
+.card:hover {
+  transform: scale(1.02);
+  z-index: 1;
+}
 
 /* 
 git add .
@@ -95,13 +84,55 @@ git push -u origin main */
 
 .promo {
   position: absolute;
-  top: 0px;
+  top: -10px;
   background-color: red;
   color: white;
   font-weight: normal;
-  padding: 5px;
-  right: 0px;
+  padding: 5px 30px;
+  right: -10px;
+  border-radius: 0px;
 }
 #promo > span {
   text-decoration: none;
+}
+
+.promo::before {
+  content: "";
+  height: 23px;
+  width: 23px;
+  background-color: #dadcde;
+  z-index: 1;
+  position: absolute;
+  transform: rotate(45deg);
+  right: -11px;
+}
+
+/* breakpoint */
+/* 992px - LG */
+@media screen and (max-width: 992px) {
+  #text-carosel {
+    padding-left: 0%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #text-carosel > * {
+    text-align: center;
+  }
+  #image-carosel {
+    width: 30% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #image-carosel {
+    width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #image-carosel {
+    width: 70% !important;
+  }
 }

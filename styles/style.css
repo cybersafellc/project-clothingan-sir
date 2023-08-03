@@ -1,6 +1,9 @@
 #logonav {
   width: 150px;
 }
+.bg-dark-5 {
+  background-color: #fbfbfb !important;
+}
 section {
   min-height: 100vh;
   padding: 50px 0px;
@@ -108,6 +111,26 @@ git push -u origin main */
   position: absolute;
   transform: rotate(45deg);
   right: -11px;
+}
+#card-our-sevices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+#card-our-sevices:hover {
+  background-color: rgba(0, 0, 0, 0.797);
+}
+#card-our-sevices > * {
+  transition: all 0.3s;
+}
+
+#card-our-sevices:hover > * {
+  color: white;
+}
+#card-our-sevices > i {
+  font-size: 100px;
 }
 
 /* breakpoint */
